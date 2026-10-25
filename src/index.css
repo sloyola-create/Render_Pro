@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  /* Official Prodalam Corporate Palette (Extracted from Color Template & Logo) */
+  --prodalam-blue: #0047ba;
+  --prodalam-logo-blue: #1d529d;
+  --prodalam-orange: #ff7a00;
+  --prodalam-navy: #040b29;
+  --prodalam-cobalt: #002068;
+  --prodalam-sky: #a6c8ff;
+  --prodalam-ice: #ebf3ff;
+  --prodalam-gray: #e5e5e5;
+  --prodalam-dark-grad-start: #050811;
+  --prodalam-dark-grad-end: #1b2a4a;
+
+  /* Default Dark Theme Surface Tokens */
+  --bg-canvas: #0b0f19;
+  --bg-surface: #111827;
+  --bg-elevated: #1b2436;
+  --border-subtle: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+}
+
+html.theme-light {
+  --bg-canvas: #f4f7fb;
+  --bg-surface: #ffffff;
+  --bg-elevated: #ebf3ff;
+  --border-subtle: #cbd5e1;
+  --text-primary: #040b29;
+  --text-secondary: #475569;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  code,
+  pre,
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}

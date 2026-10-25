@@ -1,0 +1,6 @@
+{
+  "name": "Prodalam Render Pro",
+  "description": "Plataforma profesional de conversión de planos y diseños 2D a entornos arquitectónicos y objetos de ingeniería 3D navegables en tiempo real con Three.js y Gemini Vision API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
